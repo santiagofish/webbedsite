@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>HALLI HALLO</title>
     <meta charset="utf-8">
+    <title>Shopping List</title>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Grüsse! Es freut mich, euch zu sehen!</h1>
     <div class="grid-container">
-      <div class="item1">Header</div>
-      <div class="item2">Menu</div>
-      <div class="item3">Main</div>
-      <div class="item4">Right</div>
-      <div class="item5">Footer</div>
+      <div class="item1">
+        <h2 id="pageHeader">Shopping List</h2>
+      </div>
+      <div class="item2">
+        <div class="mainContainer">
+          <div id="mainContainer-text">
+            What do we need from the grocer?
+          </div>
+          <input id="userInput" type="text" placeholder=" type here"></input>
+          <button id="submitButton">Add to list!</button>
+        </div>
+      </div>
+      <div class="item3">
+        <div id="header">{empty list}</div>
+        <div id="listContainer">
+          <ul id="theList"></ul>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="footer">
+          <div class="feeters">
+            <a id="twitter" href="#">twitter</a>
+            <a id="github" href="#">github</a>
+            <a id="homepage" href="#">homepage</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
